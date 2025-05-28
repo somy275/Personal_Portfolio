@@ -1,0 +1,31 @@
+@import "tailwindcss";
+:root {
+  font-family: "Nunito";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  background-color: #0b111e;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #43b0f1;
+  border-radius: 10px;
+}
+.clip-path {
+  clip-path: inset(0%);
+}
+.clip-path:hover {
+  clip-path: inset(1.5%);
+}
+/* .tootlip:hover .tootlip-text {
+  visibility: visible;
+  opacity: 1;
+  top: -1.2rem;
+} */
+
+.send:hover .icon {
+  transform: translateY(-30%);
+}

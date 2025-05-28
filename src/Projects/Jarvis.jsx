@@ -1,0 +1,44 @@
+import React from 'react'
+import ipad from "../assets/ipad.png"
+import { GoLinkExternal } from 'react-icons/go'
+const Jarvis = () => {
+    const skills = ["Html", "CSS", "TailwindCSS", "React.JS", "Fetch Api", "Gemini Api", "Voice recognition", "Speech Synthesis"]
+    return (
+        <div className='w-full h-auto flex  items-center justify-between gap-[13rem] mt-[3rem] px-[4rem] pb-[5rem]'>
+            <div className='flex w-auto max-w-[400px] h-fit relative tootlip_project'>
+                <a href="https://somyvirtualai.netlify.app/" target='_blank' className='flex justify-center items-end w-auto h-[30rem] z-[2] relative hover:scale-[1.1] duration-[270ms] ease-in-out'>
+                    <img src="/src/assets/Jarvis.webp" alt="Smooth Scrolling" className='aspect-[.8/1] w-auto object-cover absolute top-[2.38rem]  right-[.6rem] z-[1]  h-[26.65rem] ' />
+                    <img draggable="false" src={ipad} alt="Macbook" className='w-auto  relative z-[1] h-[28rem] object-cover drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]' />
+                    <span className=' tootlip-text_project absolute top-[20%] text-[#0B111E] text-[clamp(0.875rem,0.4816rem+0.6148vw,1.25rem)] font-semibold flex items-center justify-around  shadow-[0_5px_10px_rgba(0,0,0,0.3)] transition-[top_0.3s_cubic-bezier(0.68,-0.55,0.265,1.55)]  w-auto px-[1rem] py-[0.4rem] rounded-lg bg-[#C9A260] after:absolute after:w-[0.7rem] after:h-[0.7rem] after:bg-[#C9A260] after:rotate-45 after:bottom-[-0.3rem] after:right-[45%]  '>Jarvis
+                        <GoLinkExternal className='w-auto h-auto ml-[.3rem] ' />
+                    </span>
+                </a>
+            </div>
+            <span className='w-full flex flex-col items-start gap-[1rem] text-[#C9A260]'>
+                <span>
+                    <h1 className='text-[clamp(1.875rem,1.2193rem+1.0246vw,2.5rem)] font-bold'>Jarvis</h1>
+                    <h3 className='text-[clamp(1.0625rem,0.5379rem+0.8197vw,1.5625rem)]'>(Virtual Voice Assistant)</h3>
+                </span>
+                <p className='text-[#E8EEF1] text-[clamp(0.875rem,0.4816rem+0.6148vw,1.25rem)]'>I made this virtual voice assistant, which is a type of digital assistant that uses voice recognition and gemini api to interact with users through spoken commands. It's like combining a virtual assistant with voice control—so we can talk to it and it responds with a voice or performs an action.</p>
+                <ul className='text-[#E8EEF1] w-full flex flex-wrap gap-y-[.7rem] gap-x-[0.6rem]'>
+                    {
+                        skills.map((data) => {
+                            return (
+                                <li className='border-1 border-solid border-[#43B0F1] px-[.7rem] py-[.2rem] text-[clamp(0.75rem,0.4221rem+0.5123vw,1.0625rem)] rounded-3xl'>
+                                    {data}
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </span>
+            <span className=' absolute left-[29.17%] flex  items-center h-auto'>
+                <div className='relative bg-[#C9A260] w-[15rem] h-[0.07rem]'>
+                </div>
+                <a href="https://somyvirtualai.netlify.app/" target='_blank' className='w-[1rem] h-[1rem] bg-[#0B111E] relative z-[2] rounded-4xl border-[3px] border-solid border-[#C9A260] hover:scale-[1.2] transition-transform duration-[170ms] ease-in-out'></a>
+            </span>
+        </div>
+    )
+}
+
+export default Jarvis
