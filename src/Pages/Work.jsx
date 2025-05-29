@@ -12,7 +12,7 @@ const Work = () => {
       <SmoothScroll />
       <ToDo />
       <CurrencyConvert />
-      {/* <Jarvis/>  */}
+      <Jarvis/> 
       <div className='hidden lg:block absolute top-0 bottom-0 z-[1] w-[0.1rem] bg-[#43b0f1] h-auto opacity-[.5]'></div>
     </section>
   )

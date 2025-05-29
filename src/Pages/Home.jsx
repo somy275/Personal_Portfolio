@@ -26,7 +26,7 @@ const Home = () => {
               <NavLink className="text-[max(10px,4.4vw)] min-[450px]:text-[max(20px,3.7vw)] md:text-[max(25px,3.3vw)] lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] bg-[#43b0f1] text-[#0B111E] md:py-[.8rem] py-[0.6rem] lg:py-[0.6rem] px-[max(1rem,6vw)] md:px-[1.8rem] lg:px-[1.5rem] rounded-xl" to="/about">About</NavLink>
             </span>
           </span>
-          <span className='pointer-events-auto translate-y-[10%] w-fit h-auto flex flex-col gap-[1.7rem] min-[450px]:gap-[2rem] opacity-[.7] text-[max(20px,7.8vw)] min-[450px]:text-[max(35px,6.5vw)] md:text-[max(45px,7vw)] lg:text-[40px]'>
+          <span className='pointer-events-auto lg:translate-y-[10%] w-fit h-auto flex flex-col gap-[2rem] min-[450px]:gap-[2rem] opacity-[.7] text-[max(28px,11.5vw)] min-[450px]:text-[max(35px,6.5vw)] md:text-[max(45px,7vw)] lg:text-[40px]'>
             <FaLinkedinIn title='Linkdin' className='cursor-pointer hover:text-[#0061b5] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
             <FaInstagram title='Instagram' className='insta cursor-pointer hover:text-[#ee2a7b] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
             <CgMail title='Gmail' className='cursor-pointer hover:text-[#FBBC05] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
