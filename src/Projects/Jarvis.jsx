@@ -1,13 +1,14 @@
 import React from 'react'
 import ipad from "../assets/ipad.png"
 import { GoLinkExternal } from 'react-icons/go'
+import jarvis from "../assets/Jarvis.webp"
 const Jarvis = () => {
     const skills = ["Html", "CSS", "TailwindCSS", "React.JS", "Fetch Api", "Gemini Api", "Voice recognition", "Speech Synthesis"]
     return (
         <div className='w-full h-fit lg:h-auto flex flex-col lg:flex-row items-center justify-between gap-[3rem] lg:gap-[11rem] mt-[max(4rem,28vw)] min-[450px]:mt-[max(6rem,21vw)] md:mt-[13rem] lg:mt-[4rem] px-[2rem] lg:px-[4rem] pb-[5rem]'>
             <div className='flex max-w-[400px] min-[450px]:max-w-fit lg:max-w-[400px] w-auto  h-fit relative group'>
                 <a href="https://somyvirtualai.netlify.app/" target='_blank' className='flex  justify-center w-auto h-auto lg:h-[27rem] lg:max-h-[450px]  items-end z-[2] relative hover:scale-[1.15]  duration-[270ms] ease-in-out'>
-                    <img src="/src/assets/Jarvis.webp" alt="Smooth Scrolling" className='aspect-[.7/1] w-fit  object-cover absolute z-[1] h-full lg:h-[92.7%] ' />
+                    <img src={jarvis} alt="Smooth Scrolling" className='aspect-[.7/1] w-fit  object-cover absolute z-[1] h-full lg:h-[92.7%] ' />
                     <img draggable="false" src={ipad} alt="Macbook" className='w-auto  relative z-[1] h-[max(8rem,69vw)] min-[450px]:h-[max(19rem,63vw)] md:h-[max(30rem,59vw)] max-h-[300px] min-[450px]:max-h-[450px] md:max-h-[550px] lg:max-h-[400px] object-cover drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]' />
                     <span className=' lg:group-hover:top-[-2rem] absolute top-[-15vw] min-[450px]:top-[-27%] md:top-[-19%] lg:top-[20%] text-[#0B111E] text-[max(.7rem,3.5vw)] min-[450px]:text-[max(1rem,3vw)] md:text-[max(1.45rem,2.7vw)] lg:text-[clamp(0.875rem,0.4816rem+0.6148vw,1.25rem)] font-semibold flex items-center justify-around  shadow-[0_5px_10px_rgba(0,0,0,0.3)] transition-[top_0.3s_cubic-bezier(0.68,-0.55,0.265,1.55)]  w-auto px-[1rem] py-[0.4rem] rounded-lg bg-[#C9A260] after:absolute after:w-[0.7rem] after:h-[0.7rem] after:bg-[#C9A260] after:rotate-45 after:bottom-[-0.3rem] after:right-[45%]  '>Jarvis
                         <GoLinkExternal className='w-auto h-auto ml-[.3rem] ' />
