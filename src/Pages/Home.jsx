@@ -10,6 +10,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import MatterCanvas from '../UI/Matter';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Resume from "../assets/New_Somy_Resume.pdf"
 const Home = () => {
   const ref = useRef()
   useGSAP(() => {
@@ -35,7 +36,7 @@ const Home = () => {
               <h5 className='text-[max(12px,4.8vw)] min-[450px]:text-[max(20px,4vw)] md:text-[max(27px,3.5vw)] lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] text-[#e8eef1]'>Fronted Developer</h5>
             </span>
             <span className='w-auto flex mx-auto gap-[1rem] pointer-events-auto'>
-              <a className='text-[max(10px,4.4vw)] min-[450px]:text-[max(20px,3.7vw)] md:text-[max(25px,3.3vw)]  lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] w-[max(7.1rem,38vw)] max-w-[185px] min-[450px]:px-[1rem] md:px-[1.8rem] md:py-[.8rem] lg:py-[.6rem] lg:px-[1.1rem] min-[450px]:max-w-fit lg:w-fit lg:max-w-none relative cursor-pointer border-1 text-[#43b0f1] border-[#43b0f1] py-[0.6rem] rounded-xl overflow-hidden z-[1] before:z-[-1]  before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0  before:bg-[#43b0f1] before:scale-y-0 before:origin-top hover:before:scale-y-[1] hover:before:origin-bottom before:ease-in-out hover:text-[#0B111E] before:transition-transform before:duration-[350ms]' href='src/assets/New_Somy_Resume.pdf' type='button' download>Download CV</a>
+              <a className='text-[max(10px,4.4vw)] min-[450px]:text-[max(20px,3.7vw)] md:text-[max(25px,3.3vw)]  lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] w-[max(7.1rem,38vw)] max-w-[185px] min-[450px]:px-[1rem] md:px-[1.8rem] md:py-[.8rem] lg:py-[.6rem] lg:px-[1.1rem] min-[450px]:max-w-fit lg:w-fit lg:max-w-none relative cursor-pointer border-1 text-[#43b0f1] border-[#43b0f1] py-[0.6rem] rounded-xl overflow-hidden z-[1] before:z-[-1]  before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0  before:bg-[#43b0f1] before:scale-y-0 before:origin-top hover:before:scale-y-[1] hover:before:origin-bottom before:ease-in-out hover:text-[#0B111E] before:transition-transform before:duration-[350ms]' href={Resume} type='button' download>Download CV</a>
               <NavLink className="text-[max(10px,4.4vw)] min-[450px]:text-[max(20px,3.7vw)] md:text-[max(25px,3.3vw)] lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] bg-[#43b0f1] text-[#0B111E] md:py-[.8rem] py-[0.6rem] lg:py-[0.6rem] px-[max(1rem,6vw)] md:px-[1.8rem] lg:px-[1.5rem] rounded-xl" to="/about">About</NavLink>
             </span>
           </span>
