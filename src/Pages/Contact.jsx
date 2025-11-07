@@ -21,8 +21,8 @@ const Contact = () => {
       })
       tl.to(ref.current.childNodes[idx], {
         x: 0,
-        duration: 0.6,
-        ease: "elastic.inOut",
+        duration: 0.4,
+        ease: "power4.inOut",
         stagger: 0.2,
         scrub: 1,
 

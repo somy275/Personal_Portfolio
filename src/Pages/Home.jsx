@@ -10,7 +10,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import MatterCanvas from '../UI/Matter';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import Resume from "../assets/New_Somy_Resume.pdf"
+import Resume from "../assets/Somy_Resume_Updated.pdf"
 const Home = () => {
   const ref = useRef()
   useGSAP(() => {
@@ -41,12 +41,22 @@ const Home = () => {
             </span>
           </span>
           <span className='pointer-events-auto lg:translate-y-[10%] w-fit h-auto flex flex-col gap-[2rem] min-[450px]:gap-[2rem] opacity-[.7] text-[max(28px,11.5vw)] min-[450px]:text-[max(35px,6.5vw)] md:text-[max(45px,7vw)] lg:text-[40px]'>
+<a href='https://www.linkedin.com/in/somyranjan-kumar-67b667260/' target='_blank'>
             <FaLinkedinIn title='Linkdin' className='cursor-pointer hover:text-[#0061b5] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
+</a>
             <FaInstagram title='Instagram' className='insta cursor-pointer hover:text-[#ee2a7b] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
+           <a href='mailto:somyranjank@gmail.com'>
             <CgMail title='Gmail' className='cursor-pointer hover:text-[#FBBC05] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
+           </a>
+           <a target='_blank' href='https://github.com/somy275'>
             <IoLogoGithub title='Github' className='cursor-pointer hover:text-[white] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
+           </a>
+           <a target='_blank' href='https://www.facebook.com/somyranjan.kumar/'>
             <FaFacebookSquare title='Facebook' className='cursor-pointer hover:text-[#1499F6] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
+           </a>
+            <a target='_blank' href='https://api.whatsapp.com/send?phone=+917814779665&text=Hey there!'>
             <FaWhatsapp title='whatsapp' className='cursor-pointer hover:text-[#128C7E] hover:scale-[1.16] transition-transform duration-[130ms] ease-in-out' />
+            </a>
           </span>
         </span>
       </section>

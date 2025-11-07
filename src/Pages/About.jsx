@@ -18,44 +18,44 @@ const About = () => {
     let tl = gsap.timeline()
     tl.to(ref.current, {
       scale: 1,
-      duration: 0.6,
+      duration: 0.3,
       ease: "elastic.inOut",
-      stagger: 0.2,
+      stagger: 0.1,
       scrub: 1
     })
     tl.to(ref1.current, {
-      x: 0,
-      duration: 0.6,
-      ease: "elastic.inOut",
-      stagger: 0.2,
+      opacity:1,
+      duration: 0.3,
+      ease: "power3.inOut",
+      stagger: 0.1,
       scrub: 1
     })
     tl.to(ref2.current, {
-      x: 0,
-      duration: 0.6,
-      ease: "elastic.inOut",
-      stagger: 0.2,
+      opacity:1,
+      duration: 0.4,
+      ease: "power3.inOut",
+      stagger: 0.1,
       scrub: 1
     })
     tl.to(ref3.current, {
-      x: 0,
-      duration: 0.6,
-      ease: "elastic.inOut",
-      stagger: 0.2,
+      opacity:1,
+      duration: 0.3,
+      ease: "power3.inOut",
+      stagger: 0.1,
       scrub: 1
     })
     tl.to(intro.current, {
-      x: 0,
-      duration: 0.6,
-      ease: "back.inOut",
-      stagger: 0.2,
+      y: 0,
+      duration: 0.3,
+      ease: "power3.inOut",
+      stagger: 0.1,
       scrub: 1
     })
     tl.to(btn.current, {
       scale: 1,
-      duration: 0.6,
-      ease: "elastic.inOut",
-      stagger: 0.2,
+      duration: 0.3,
+      ease: "power3.inOut",
+      stagger: 0.1,
       scrub: 1
     })
   }, {})
@@ -72,26 +72,27 @@ const About = () => {
         <span className='w-full max-w-[580px] min-[450px]:max-w-[640px] md:max-w-[700px] lg:max-w-[900px] lg:w-[64%] flex flex-col justify-around gap-y-[2rem] items-center'>
           <span className='w-full grid grid-cols-2 min-[450px]:grid-cols-3 gap-[1rem] md:gap-[1.2rem] lg:flex flex-wrap justify-around'>
 
-            <span ref={ref1} className='translate-x-[500%] rounded-2xl w-auto  lg:w-auto h-auto flex flex-col items-center gap-y-[0.3rem] bg-[hsl(219,32%,15%)] px-[2rem] lg:px-[max(3.3rem,3.5vw)] py-[max(1.1rem,.8vw)] hover:bg-[hsl(219,32%,12%)]'>
+            <span ref={ref1} className='opacity-0 rounded-2xl w-auto  lg:w-auto h-auto flex flex-col items-center gap-y-[0.3rem] bg-[hsl(219,32%,15%)] px-[2rem] lg:px-[max(3.3rem,3.5vw)] py-[max(1.1rem,.8vw)] hover:bg-[hsl(219,32%,12%)]'>
               <GiAchievement className='text-[max(1.4rem,6.7vw)] min-[450px]:text-[max(1.7rem,4.7vw)] md:text-[max(2.2rem,4vw)] lg:text-[clamp(1.4375rem,1.1096rem+0.5123vw,1.75rem)] text-[#43b0f1]' />
               <h5 className='text-[#e8eef1] text-[max(.8rem,4vw)] min-[450px]:text-[max(1rem,3.2vw)] md:text-[max(1.5rem,2.8vw)] lg:text-[clamp(0.8125rem,0.4846rem+0.5123vw,1.125rem)] font-bold'>Experience</h5>
               <p className='text-[#e8eef1b1] text-[max(.6rem,2.8vw)] min-[450px]:text-[max(.8rem,2.1vw)] md:text-[max(1.1rem,2.1vw)]  lg:text-[clamp(0.625rem,0.2316rem+0.6148vw,1rem)]'>Fresher</p>
             </span>
 
-            <span ref={ref2} className='translate-x-[500%] rounded-2xl w-auto  lg:w-auto h-auto flex flex-col items-center gap-y-[0.3rem] bg-[hsl(219,32%,15%)] px-[2rem] lg:px-[max(3.3rem,3.5vw)] py-[max(1.1rem,.8vw)] hover:bg-[hsl(219,32%,12%)]'>
+            <span ref={ref2} className='opacity-0 rounded-2xl w-auto  lg:w-auto h-auto flex flex-col items-center gap-y-[0.3rem] bg-[hsl(219,32%,15%)] px-[2rem] lg:px-[max(3.3rem,3.5vw)] py-[max(1.1rem,.8vw)] hover:bg-[hsl(219,32%,12%)]'>
               <BsSuitcaseLg className='text-[max(1.4rem,6.7vw)] min-[450px]:text-[max(1.7rem,4.7vw)] md:text-[max(2.2rem,4vw)] lg:text-[clamp(1.4375rem,1.1096rem+0.5123vw,1.75rem)] text-[#43b0f1]' />
               <h5 className='text-[#e8eef1] text-[max(.8rem,4vw)] min-[450px]:text-[max(1rem,3.2vw)] md:text-[max(1.5rem,2.8vw)] lg:text-[clamp(0.8125rem,0.4846rem+0.5123vw,1.125rem)] font-bold'>Completed</h5>
               <p className='text-[#e8eef1b1] text-[max(.6rem,2.8vw)] min-[450px]:text-[max(.8rem,2.1vw)] md:text-[max(1.1rem,2.1vw)]  lg:text-[clamp(0.625rem,0.2316rem+0.6148vw,1rem)]'>5+ projects</p>
             </span>
 
-            <span ref={ref3} className='translate-x-[500%] rounded-2xl w-auto  lg:w-auto h-auto flex flex-col items-center gap-y-[0.3rem] bg-[hsl(219,32%,15%)] px-[2rem] lg:px-[max(3.3rem,3.5vw)] py-[max(1.1rem,.8vw)] hover:bg-[hsl(219,32%,12%)]'>
+            <span ref={ref3} className='opacity-0 rounded-2xl w-auto  lg:w-auto h-auto flex flex-col items-center gap-y-[0.3rem] bg-[hsl(219,32%,15%)] px-[2rem] lg:px-[max(3.3rem,3.5vw)] py-[max(1.1rem,.8vw)] hover:bg-[hsl(219,32%,12%)]'>
               <BiSupport className='text-[max(1.4rem,6.7vw)] min-[450px]:text-[max(1.7rem,4.7vw)] md:text-[max(2.2rem,4vw)] lg:text-[clamp(1.4375rem,1.1096rem+0.5123vw,1.75rem)] text-[#43b0f1]' />
               <h5 className='text-[#e8eef1] text-[max(.8rem,4vw)] min-[450px]:text-[max(1rem,3.2vw)] md:text-[max(1.5rem,2.8vw)] lg:text-[clamp(0.8125rem,0.4846rem+0.5123vw,1.125rem)] font-bold'>Support</h5>
               <p className='text-[#e8eef1b1] text-[max(.6rem,2.8vw)] min-[450px]:text-[max(.8rem,2.1vw)] md:text-[max(1.1rem,2.1vw)]  lg:text-[clamp(0.625rem,0.2316rem+0.6148vw,1rem)]'>Online 24/7</p>
             </span>
           </span>
-          <h5 ref={intro} className='translate-x-[200%] text-[#e8eef1b6] text-[max(1rem,4vw)] md:text-[max(1.8rem,3.5vw)] lg:text-[clamp(0.875rem,0.0225rem+1.332vw,1.6875rem)]'>As a passionate Front-End Developer, I specialize in creating dynamic, user-friendly web applications using HTML, CSS, JavaScript, and ReactJS.
-            With a strong foundation in front-end development, I’m constantly honing my skills to build responsive, visually appealing websites that provide seamless user experiences.</h5>
+        <span className='overflow-hidden'>
+          <h5 ref={intro} className='translate-y-[100%] inline-block text-[#e8eef1b6] text-[max(1rem,4vw)] md:text-[max(1.8rem,3.5vw)] lg:text-[clamp(0.875rem,0.0225rem+1.332vw,1.6875rem)]'>As a passionate Front-End Developer, I specialize in creating dynamic, user-friendly web applications using HTML, CSS, JavaScript, and ReactJS.
+            With a strong foundation in front-end development, I’m constantly honing my skills to build responsive, visually appealing websites that provide seamless user experiences.</h5></span>
           <NavLink ref={btn} className="scale-0 bg-[#43b0f1] text-[max(.9rem,4vw)] md:text-[max(1.6rem,3.3vw)] lg:text-[clamp(0.875rem,0.0225rem+1.332vw,1.6875rem)]  font-semibold text-[#0B111E] py-[max(.6rem,1.8vw)] lg:py-[max(.6rem,1vw)] px-[max(1.8rem,5.3vw)] lg:px-[max(1.8rem,2.5rem)] rounded-xl" to="/contact">Contact</NavLink>
         </span>
       </div>

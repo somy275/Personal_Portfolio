@@ -12,9 +12,9 @@ const SendMsg = () => {
     useGSAP(() => {
         gsap.to(inputText.current, {
             x: 0,
-            duration: 2,
-            ease: "elastic.inOut",
-            stagger: 0.2,
+            duration: 0.4,
+            ease: "power3.inOut",
+            stagger: 0.1,
             scrub: 1,
 
         })
