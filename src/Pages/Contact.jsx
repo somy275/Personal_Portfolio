@@ -7,6 +7,7 @@ import SendMsg from '../UI/SendMsg';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
+import { Bounce, ToastContainer } from 'react-toastify';
 const Contact = () => {
   const ref = useRef()
   
@@ -69,6 +70,19 @@ const Contact = () => {
         <SendMsg />
 
       </div>
+        <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+                transition={Bounce}
+            />
     </section>
   )
 }

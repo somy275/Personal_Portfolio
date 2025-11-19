@@ -14,6 +14,18 @@ export const notifyOnSuccess = (msg) => {
     });
 };
 
+export const notifyPending=(promise)=>{
+toast.promise(
+    promise,
+    {
+       pending: 'Sending email...',
+      success: 'Email sent successfully',
+      error: 'Failed to send email'
+    }
+)
+
+}
+
 export const notifyOnError = (msg) => {
     toast.error(msg, {
         position: "top-right",
