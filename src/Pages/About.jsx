@@ -91,8 +91,11 @@ const About = () => {
             </span>
           </span>
         <span className='overflow-hidden'>
-          <h5 ref={intro} className='translate-y-[100%] inline-block text-[#e8eef1b6] text-[max(1rem,4vw)] md:text-[max(1.8rem,3.5vw)] lg:text-[clamp(0.875rem,0.0225rem+1.332vw,1.6875rem)]'>As a passionate Front-End Developer, I specialize in creating dynamic, user-friendly web applications using HTML, CSS, JavaScript, and ReactJS.
-            With a strong foundation in front-end development, I’m constantly honing my skills to build responsive, visually appealing websites that provide seamless user experiences.</h5></span>
+          <h5 ref={intro} className='translate-y-[100%] inline-block text-[#e8eef1b6] text-[max(1rem,4vw)] md:text-[max(1.8rem,3.5vw)] lg:text-[clamp(0.875rem,0.0225rem+1.332vw,1.6875rem)]'>
+            As a passionate Web Developer, I specialize in creating dynamic, user-friendly web applications using HTML, CSS, JavaScript, TailwindCSS and ReactJS.
+            Currently exploring Mern Stack development by building projects from frontend to backend and exploring new technologies.
+I'm strengthening myself in technologies like JS, React JS, Node JS, Express JS, etc., so that I can build applications more effectively and provide seamless user experiences.
+</h5></span>
           <NavLink ref={btn} className="scale-0 bg-[#43b0f1] text-[max(.9rem,4vw)] md:text-[max(1.6rem,3.3vw)] lg:text-[clamp(0.875rem,0.0225rem+1.332vw,1.6875rem)]  font-semibold text-[#0B111E] py-[max(.6rem,1.8vw)] lg:py-[max(.6rem,1vw)] px-[max(1.8rem,5.3vw)] lg:px-[max(1.8rem,2.5rem)] rounded-xl" to="/contact">Contact</NavLink>
         </span>
       </div>
