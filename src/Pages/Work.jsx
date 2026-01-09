@@ -4,35 +4,35 @@ import SmoothScroll from '../Projects/SmoothScroll'
 import ToDo from '../Projects/ToDo'
 import CurrencyConvert from '../Projects/CurrencyConvert'
 import Jarvis from '../Projects/Jarvis'
+import ImageProcessor from '../Projects/ImageProcessor'
 const Work = () => {
   const [ProjectsShow, setProjectsShow] = useState(2)
   const loaderRef=useRef()
   const Projects=[
+    {id:0,project:<ImageProcessor/>},
     {
-      id:0,
+      id:1,
     project:<WorldAtlas/>
     },
      {
-      id:1,
+      id:2,
     project:<SmoothScroll/>
     },
      {
-      id:2,
+      id:3,
     project:<ToDo/>
     },
     {
-      id:3,
+      id:4,
     project:<CurrencyConvert/>
     },
     {
-      id:4,
+      id:5,
       project:<Jarvis/>
     }
   ]
   useEffect(() => {
   const observer=new IntersectionObserver((entries)=>{
-    console.log(entries);
-    
     if(entries[0].isIntersecting){
       setProjectsShow((prev)=>prev+1)
     }
