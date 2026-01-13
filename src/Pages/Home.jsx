@@ -1,7 +1,6 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { NavLink } from 'react-router'
 import { FaLinkedinIn } from "react-icons/fa";
-import { BiLogoTwitter } from "react-icons/bi";
 import { FaInstagram } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { IoLogoGithub } from "react-icons/io";
@@ -11,16 +10,64 @@ import MatterCanvas from '../UI/Matter';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import Resume from "../assets/Somy_Resume_Updated.pdf"
+import { TextPlugin } from 'gsap/all';
 const Home = () => {
+  gsap.registerPlugin(TextPlugin);
   const ref = useRef()
-  useGSAP(() => {
-
-    gsap.registerPlugin(gsap);
+  const roleRef=useRef()
+   useGSAP(() => {
+    // Name animation
     gsap.to(ref.current, {
       y: 0,
-      stagger: true,
+      duration: 0.9,
+      ease: "power3.out",
+    });
+
+    // Typing animation
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.6 });
+
+    tl.to(roleRef.current, {
+      duration: 2,
+      text: {
+        value: "Web Developer",
+        delimiter: "",
+      },
+      ease: "none",
     })
-  }, {})
+      .to(roleRef.current, {
+        duration: 1,
+        text: "",
+        delay: 0.4,
+      })
+      .to(roleRef.current, {
+        duration: 2.2,
+        text: {
+          value: "Frontend Developer",
+          delimiter: "",
+        },
+        ease: "none",
+      })
+      .to(roleRef.current, {
+        duration: 1,
+        text: "",
+        delay: 0.4,
+      })
+      .to(roleRef.current, {
+        duration: 2,
+        text: {
+          value: "ReactJS Developer",
+          delimiter: "",
+        },
+        ease: "none",
+      })
+      .to(roleRef.current, {
+        duration: 1,
+        text: "",
+        delay: 0.4,
+      });
+
+    return () => tl.kill();
+  }, []);
   return (
     <>
 
@@ -33,7 +80,11 @@ const Home = () => {
                 <h2 ref={ref} className='inline-block text-[max(20px,8vw)] translate-y-[100%] transition-transform duration-[900ms] min-[450px]:text-[max(35px,7.5vw)] md:text-[max(45px,7vw)]  text-[#43b0f1] lg:text-[clamp(2.5rem,1.9754rem+0.8197vw,3rem)]'>Somyranjan Kumar</h2>
               </span>
 
-              <h5 className='text-[max(12px,4.8vw)] min-[450px]:text-[max(20px,4vw)] md:text-[max(27px,3.5vw)] lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] text-[#e8eef1]'>Fronted Developer</h5>
+              <h5 ref={roleRef} className=''></h5>
+              <h5 className="text-[max(12px,4.8vw)] min-[450px]:text-[max(20px,4vw)] md:text-[max(27px,3.5vw)] lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] text-[#e8eef1]">
+  <span ref={roleRef}></span>
+  <span className="cursor text-[#43B0F1]">|</span>
+</h5>
             </span>
             <span className='w-auto flex mx-auto gap-[1rem] pointer-events-auto'>
               <a className='text-[max(10px,4.4vw)] min-[450px]:text-[max(20px,3.7vw)] md:text-[max(25px,3.3vw)]  lg:text-[clamp(1rem,0.541rem+0.7172vw,1.4375rem)] w-[max(7.1rem,38vw)] max-w-[185px] min-[450px]:px-[1rem] md:px-[1.8rem] md:py-[.8rem] lg:py-[.6rem] lg:px-[1.1rem] min-[450px]:max-w-fit lg:w-fit lg:max-w-none relative cursor-pointer border-1 text-[#43b0f1] border-[#43b0f1] py-[0.6rem] rounded-xl overflow-hidden z-[1] before:z-[-1]  before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0  before:bg-[#43b0f1] before:scale-y-0 before:origin-top hover:before:scale-y-[1] hover:before:origin-bottom before:ease-in-out hover:text-[#0B111E] before:transition-transform before:duration-[350ms]' href={Resume} type='button' download>Download CV</a>
